@@ -1,0 +1,62 @@
+@import '../../../colors.scss';
+
+.radio-container {
+    display: flex;
+    position: relative;
+    padding-left: 2.5rem;
+    margin: 0 1rem 1rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+    .label {
+        padding-top: 0.5rem;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked~.checkmark {
+            background-color: white;
+            border-color: $color-green-dark;
+        }
+
+        &:checked~.checkmark:after {
+            display: block;
+        }
+    }
+
+
+    .checkmark {
+        position: absolute;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border: solid 2px $color-gray-dark;
+        border-radius: 50%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 6px;
+            left: 6px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: black;            
+        }
+    }
+
+    &:hover input~.checkmark {
+        border-color: $color-green-dark;
+    }
+
+}

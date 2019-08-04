@@ -1,0 +1,76 @@
+@import '../../colors.scss';
+
+.user-table {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    tr:nth-child(even) {
+        background-color: $color-gray-light;
+    }
+
+    tr:hover {
+        background-color: $color-gray-dark;
+    }
+
+    tr {
+        align-items: center;
+        height: 3rem;
+    }
+
+    a {
+        color: $color-green-dark;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.fa-trash-alt {
+    color: $color-green-dark;
+}
+
+.actions {
+    width: 2rem;
+}
+
+.users-area {
+    margin: 2rem;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 2em;
+        }
+
+        .filter {
+            border-radius: 5px;
+            height: 2rem;
+            padding: 0 0.5rem;
+            min-width: 15rem;
+        }
+    }
+
+    hr {
+        height: .1em;
+        width: 75%;
+        color: $color-gray-light;
+        background: $color-gray-light;
+        border-style: solid;
+    }
+}
+
+.trash-button {
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}

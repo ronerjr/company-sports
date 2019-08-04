@@ -1,0 +1,102 @@
+@import "../../colors.scss";
+
+@mixin icons {
+    color: $color-green-dark;
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
+.register-area {
+    margin: 2rem;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-size: 2rem;
+        }
+
+    }
+
+    hr {
+        height: .1rem;
+        width: 80%;
+        color: $color-gray-light;
+        background: $color-gray-light;
+        border-style: solid;
+    }
+}
+
+.form-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+    padding-left: 5rem;
+
+    form {
+        display: grid;
+        grid-column-gap: 3rem;
+        grid-template-columns: 30rem 30rem;
+        width: 70%;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+        height: 5rem;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .optional {
+            color: gray;
+            font-size: 0.8rem;
+        }
+
+        .text-input {
+            height: 2rem;
+            border-radius: 6px;
+            border-style: solid;
+            border-color: $color-gray-dark;
+
+            &:focus {
+                border-color: $color-green-dark;
+                outline: none;
+            }
+        }
+    }
+}
+
+.btn {
+    border-style: solid;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+
+    &.cancel {
+        color: gray;
+    }
+
+    &.save {
+        border-color: $color-green-dark;
+        background-color: $color-green-dark;
+        color: white;
+        margin-right: 1rem;
+    }
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-life-ring,
+.fa-smile,
+.fa-heartbeat {
+    @include icons();
+}

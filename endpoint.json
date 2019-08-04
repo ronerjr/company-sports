@@ -1,0 +1,86 @@
+{
+  "ride-in-group": [
+    {
+      "userId": 1,
+      "often": "Always"
+    },
+    {
+      "userId": 2,
+      "often": "Sometimes"
+    },
+    {
+      "userId": 3,
+      "often": "Never"
+    },
+    {
+      "userId": 4,
+      "often": "Sometimes"
+    },
+    {
+      "userId": 5,
+      "often": "Sometimes"
+    },
+    {
+      "userId": 6,
+      "often": "Always"
+    },
+    {
+      "userId": 7,
+      "often": "Always"
+    },
+    {
+      "userId": 8,
+      "often": "Sometimes"
+    },
+    {
+      "userId": 9,
+      "often": "Never"
+    },
+    {
+      "userId": 10,
+      "often": "Sometimes"
+    }
+  ],
+  "week-days": [
+    {
+      "userId": 1,
+      "days": "Mon, Wed, Fri"
+    },
+    {
+      "userId": 2,
+      "days": "Wed, Fri"
+    },
+    {
+      "userId": 3,
+      "days": "Sat, Sun"
+    },
+    {
+      "userId": 4,
+      "days": "Mon, Fri"
+    },
+    {
+      "userId": 5,
+      "days": "Wed"
+    },
+    {
+      "userId": 6,
+      "days": "Tue, Wed"
+    },
+    {
+      "userId": 7,
+      "days": "Tue, Tus"
+    },
+    {
+      "userId": 8,
+      "days": "Tue, Fri"
+    },
+    {
+      "userId": 9,
+      "days": "Mon, Wed"
+    },
+    {
+      "userId": 10,
+      "days": "Wed"
+    }
+  ]
+}

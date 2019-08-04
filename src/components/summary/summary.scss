@@ -1,0 +1,44 @@
+@import '../../colors.scss';
+
+@mixin icons {
+    font-size: 3rem;
+    color: $color-green;
+}
+
+.summary-area {
+    display: flex;
+    align-items: center;
+    background: $color-green-light;
+    padding: 3rem 3rem;
+}
+
+.category {
+    display: flex;
+    margin: 0 2rem;
+    .title {
+        font-size: 0.8rem;
+    }
+
+    .data {
+        font-size: 1.7rem;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+}
+
+.fa-puzzle-piece {
+    @include icons();
+}
+
+.fa-trophy {
+    @include icons();
+}
+
+.fa-map-signs {
+    @include icons();
+}
